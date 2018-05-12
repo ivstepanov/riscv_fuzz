@@ -1,0 +1,7 @@
+START = Entity |
+
+Entity = Group | Item
+
+Group = "<group>" +(Entity) "</group>"
+
+Item = "<item name=\"" +([\w]) "\">" +([0-9]) "</item>"
